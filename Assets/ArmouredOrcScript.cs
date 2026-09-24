@@ -1,7 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class ArmouredOrcScript : OrcScript
 {
+
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +20,6 @@ public class ArmouredOrcScript : OrcScript
 
     public override void AttackPlayer()
     {
-        print("Armoured orc is attacking player");
+        textToChange.text = "Armoured orc is attacking player";
     }
 }

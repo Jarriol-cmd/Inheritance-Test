@@ -1,7 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class FriendlyOrcScript : OrcScript
 {
+
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +20,6 @@ public class FriendlyOrcScript : OrcScript
 
     public override void AttackPlayer()
     {
-        print("Friendly orc is NOT attacking player");
+        textToChange.text = "Friendly orc is NOT attacking player";
     }
 }

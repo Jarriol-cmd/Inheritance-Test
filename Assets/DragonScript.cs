@@ -1,7 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class DragonScript : EnemyBase
 {
+
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +20,6 @@ public class DragonScript : EnemyBase
 
     public override void AttackPlayer()
     {
-        print("Dragon is attacking player");
+        textToChange.text = "Dragon is attacking player";
     }
 }

@@ -1,7 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class EnemyBase : MonoBehaviour
 {
+
+    public TextMeshProUGUI textToChange = new TextMeshProUGUI();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +21,7 @@ public class EnemyBase : MonoBehaviour
 
     public virtual void AttackPlayer()
     {
-        print("Enemy is attacking player.");
+        textToChange.text = "Enemy is attacking player";
     }
 
     void OnMouseOver()

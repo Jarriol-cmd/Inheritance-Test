@@ -1,7 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class OrcScript : EnemyBase
 {
+
+   
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,7 +20,7 @@ public class OrcScript : EnemyBase
 
     public override void AttackPlayer()
     {
-        print("Orc is attacking player");
+        textToChange.text = "Orc is attacking player";
     }
 
 }
